@@ -8,7 +8,6 @@ import com.taobao.weex.WXSDKEngine;
 import com.taobao.weex.common.WXException;
 import com.yidu.week.extend.ImageAdapter;
 import com.yidu.week.extend.WXEventModule;
-import com.yidu.week.util.AppConfig;
 
 public class WXApplication extends Application {
 
@@ -25,7 +24,6 @@ public class WXApplication extends Application {
     } catch (WXException e) {
       e.printStackTrace();
     }
-    AppConfig.init(this);
-    WeexPluginContainer.loadAll(this);
+
   }
 }
